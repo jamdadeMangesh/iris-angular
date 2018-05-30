@@ -1,0 +1,128 @@
+
+<div class="middle_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <a href="home"><img src="images/logo.jpg" class="img-responsive" alt="logo" /></a>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" ><img src="images/request_quote.png" class="img-responsive request" alt="Request" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<nav class="navbar navbar-default bootsnav" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+    <div class="container">      
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            
+        </div>
+        <!-- End Header Navigation -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            
+           <ul class="nav navbar-nav navbar-center roboto-l" data-in="fadeInDown" data-out="fadeOutUp">
+
+                <li><a href="home" class="mactive">Home</a></li> 
+
+                <li class="dropdown">
+                    <a href="about-us.php" class="dropdown-toggle mactive" data-toggle="dropdown" >About Us</a>
+                    <ul class="dropdown-menu">
+                        <li class="scroll"><a href="about-us.php#corporate-philosophy">Corporate Philosophy</a></li>
+                        <li class="scroll"><a href="about-us.php#awards">Our Awards</a></li>
+                        <li class="scroll"><a href="about-us.php#our-team">Our Team</a></li>
+                    </ul>
+                </li> 
+
+                <li class="dropdown">
+                    <a href="products.php" class="dropdown-toggle mactive" data-toggle="dropdown" >Products</a>
+                    <ul class="dropdown-menu">
+                        <li class="scroll"><a href="mulch-films.php">Mulch Films</a></li>
+                        <li class="scroll"><a href="shrink-films.php">Shrink Films</a></li>
+                        <li class="scroll"><a href="plant-protection-cover.php">Plant Protecttion Cover</a></li>
+                        <li class="scroll"><a href="low-tunnel-film.php">Low Tunnel Film</a></li>
+                        <li class="scroll"><a href="stretch-films.php">Stretch Films</a></li>
+                        <li class="scroll"><a href="yellow-black-mulching-film.php">Silage Films</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="infrastructure-facilities.php" class="dropdown-toggle mactive" data-toggle="dropdown" >Infrastructure & Facilities</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="infrastructure-facilities.php#quality">Quality</a></li>
+                        <li><a href="infrastructure-facilities.php#certificate">Certificate</a></li>
+                        <li><a href="infrastructure-facilities.php#distribution-network">Distribution Network</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="media.php" class="dropdown-toggle mactive" data-toggle="dropdown" >Media</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="media.php#exhibition">Exhibition</a></li>
+                        <!--<li><a href="media.php#merger-acquisition">Merger and Acquisition</a></li>
+                        <li><a href="media.php#blogs"> Blogs In newspaper / Magazine</a></li>-->
+                        <li><a href="media.php#video">Company Video</a></li>
+                    </ul>
+                </li>                
+                <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle mactive" data-toggle="dropdown" >Business</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Domestic</a></li>
+                        <li><a href="#">International</a></li>
+                    </ul>
+                </li>-->
+                <li><a href="careers.php" class="mactive">Careers</a></li>
+                <li><a href="contact-us" class="mactive">Contact Us</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>   
+</nav>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog roboto">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Request A Quote</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row roboto">
+            <form action="request-mail.php" method="POST">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" placeholder="Full Name" class="contact_form" name="name" required="required"/>
+                    <input type="email" placeholder="Email" class="contact_form m_20" name="email" required="required"/>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" placeholder="Mobile No." class="contact_form" pattern="[0-9]{10}" maxlength="10" title="Please enter 10 digit number" name="contact" required="required"/>
+                    <select class="contact_form m_20" style="height: 56px;" name="product_name">
+                        <option selected hidden>Select Product</option>
+                        <option value="Mulch Films">Mulch Films</option>
+                        <option value="Shrink Films">Shrink Films</option>
+                        <option value="Plant Protection Cover">Plant Protection Cover</option>
+                        <option value="Low Tunnel Film">Low Tunnel Film</option>
+                        <option value="Stretch Films">Stretch Films</option>
+                        <option value="Yellow Black Mulching Films">Yellow Black Mulching Films</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <textarea placeholder="Describe Your Requirements in Detail:" rows="3" class="contact_form m_20" name="message" style="height:130px"></textarea>
+                </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+            </form>
+    </div>
+
+  </div>
+</div>
