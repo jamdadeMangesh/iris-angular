@@ -32,11 +32,11 @@
                 <li><a href="home" class="mactive">Home</a></li> 
 
                 <li class="dropdown">
-                    <a href="about-us.php" class="dropdown-toggle mactive" data-toggle="dropdown" >About Us</a>
+                    <a href="about-us" ng-class="{activeSmall:part == 'about-us'}" class=" dropdown-toggle" data-toggle="dropdown" >About Us</a>
                     <ul class="dropdown-menu">
-                        <li class="scroll"><a href="about-us.php#corporate-philosophy">Corporate Philosophy</a></li>
-                        <li class="scroll"><a href="about-us.php#awards">Our Awards</a></li>
-                        <li class="scroll"><a href="about-us.php#our-team">Our Team</a></li>
+                        <li class="scroll"><a href="#corporate-philosophy">Corporate Philosophy</a></li>
+                        <li class="scroll"><a href="#awards">Our Awards</a></li>
+                        <li class="scroll"><a href="#our-team">Our Team</a></li>
                     </ul>
                 </li> 
 
@@ -78,7 +78,7 @@
                     </ul>
                 </li>-->
                 <li><a href="careers.php" class="mactive">Careers</a></li>
-                <li><a href="contact-us" class="mactive">Contact Us</a></li>
+                <li><a href="contact-us" ng-class="{activeSmall:part == 'contact-us'}">Contact Us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div>   

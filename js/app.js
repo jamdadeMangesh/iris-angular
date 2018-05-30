@@ -17,11 +17,11 @@ var app = angular.module('iris-polymers', []).
     config(function ($routeProvider, $locationProvider) {
       $routeProvider.
         when('/', { templateUrl: 'pages/index.html', activetab: 'projects', controller: HomeCtrl }).
-        /*when('/project/:projectId', {
-          templateUrl: function (params) { return 'pages/' + params.projectId + '.html'; },
-          controller: ProjectCtrl,
-          activetab: 'projects'
-        }).*/
+        when('/about-us/:aboutId', {
+          templateUrl: function (params) { return params.about; },
+          controller: AboutCtrl,
+          activetab: 'about-us'
+        }).
         when('/home', {
           templateUrl: 'pages/index.html',
           controller: HomeCtrl,
@@ -29,12 +29,12 @@ var app = angular.module('iris-polymers', []).
         when('/contact-us', {
           templateUrl: 'pages/contact-us.html',
           controller: ContactCtrl,
-          activetab: 'privacy'
+          activetab: 'contact-us'
         }).
-        when('/about', {
-          templateUrl: 'pages/about.html',
+        when('/about-us', {
+          templateUrl: 'pages/about-us.html',
           controller: AboutCtrl,
-          activetab: 'about'
+          activetab: 'about-us'
         }).
         otherwise({ redirectTo: '/' });
         $locationProvider.html5Mode(true);

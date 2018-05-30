@@ -192,6 +192,9 @@ p{
     top:2px;
     background: #0f9eca;
 }
+nav.navbar.bootsnav ul.nav > li > a .activeSmall{
+    color: #000;
+}
 /*---------------INDEX-------------*/
 .banner_text{
     background: rgba(238,187,14,0.9);
